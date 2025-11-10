@@ -1,24 +1,89 @@
 # api-rest
 
-Projeto REST em Go — API de exemplo.
+# Projeto de API REST em Go (API de Exemplo)
 
-Como usar localmente:
+> API RESTful de exemplo construída com Go para [Descreva o objetivo principal aqui, ex: "gerenciar um CRUD de usuários", "demonstrar o uso de X", etc.].
 
-1. Inicialize o banco (se estiver usando docker-compose):
+---
 
-   docker-compose up -d
+## 📋 Pré-requisitos
 
-2. Rodar a aplicação:
+Antes de começar, certifique-se de que você tem o seguinte software instalado em sua máquina:
 
-   go run main.go
+* **[Go](https://go.dev/dl/)**: Versão 1.18 ou superior.
+* **[Docker](https://www.docker.com/get-started)**: Para rodar o banco de dados.
+* **[Docker Compose](https://docs.docker.com/compose/install/)**
+* **(Opcional) [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/)**: Para testar os endpoints da API.
 
-Commit inicial criado pelo assistente.
+---
 
-Para empurrar para um repositório remoto:
+## 🚀 Rodando o Projeto Localmente
 
-1. Criar repo no GitHub/GitLab
-2. Adicionar remoto e dar push:
+Siga os passos abaixo para executar a aplicação em seu ambiente local.
 
-   git remote add origin <URL_DO_REPO>
-   git branch -M main
-   git push -u origin main
+### 1. Clone o Repositório
+
+```bash
+# Clone este repositório
+git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+
+# Acesse a pasta do projeto
+cd seu-repositorio
+```
+
+### 2. Inicialize o Banco de Dados
+
+Este projeto usa Docker Compose para gerenciar o banco de dados (ex: PostgreSQL, MySQL).
+
+```bash
+# Inicia o(s) container(s) em segundo plano (detached mode)
+docker-compose up -d
+```
+
+### 3. Instale as Dependências (Opcional)
+
+Se você acabou de clonar o projeto, baixe as dependências do Go:
+
+```bash
+go mod tidy
+```
+
+### 4. Execute a Aplicação
+
+Finalmente, rode o servidor da API:
+
+```bash
+go run main.go
+```
+
+Pronto! A API deve estar rodando em `http://localhost:8080` (ou na porta que você configurou).
+
+---
+
+## 🛠️ Endpoints da API
+
+Aqui estão os principais endpoints disponíveis e como usá-los.
+
+### Recurso X (ex: /usuarios)
+
+* **`GET /usuarios`**: Lista todos os usuários.
+* **`GET /usuarios/{id}`**: Busca um usuário específico pelo ID.
+* **`POST /usuarios`**: Cria um novo usuário.
+    * **Corpo (Body) esperado (JSON):**
+        ```json
+        {
+          "nome": "Seu Nome",
+          "email": "email@exemplo.com"
+        }
+        ```
+
+* **`PUT /usuarios/{id}`**: Atualiza um usuário existente.
+* **`DELETE /usuarios/{id}`**: Remove um usuário.
+
+---
+
+## 💻 Tecnologias Utilizadas
+
+* **Linguagem:** [Go](https://go.dev/)
+* **Banco de Dados:** [PostgreSQL](https://www.postgresql.org/) (via Docker)
+* **Roteador:** [gorilla/mux](https://github.com/gorilla/mux) ````
