@@ -1,0 +1,35 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, build output
+*.test
+/bin/
+/pkg/
+
+# Vendor
+/vendor/
+
+# IDE/editor files
+.vscode/
+.idea/
+*.iml
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Environment files
+.env
+
+# Go workspace
+.GOPATH
+
+# Docker
+docker-compose.override.yml
+
+# node modules if any
+node_modules/
