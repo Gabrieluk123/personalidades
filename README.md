@@ -4,7 +4,7 @@
 
 ---
 
-## 📋 Pré-requisitos
+##  Pré-requisitos
 
 Antes de começar, certifique-se de que você tem o seguinte software instalado em sua máquina:
 
