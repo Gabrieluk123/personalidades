@@ -15,7 +15,7 @@ Antes de começar, certifique-se de que você tem o seguinte software instalado 
 
 ---
 
-## 🚀 Rodando o Projeto Localmente
+##  Rodando o Projeto Localmente
 
 Siga os passos abaixo para executar a aplicação em seu ambiente local.
 
@@ -58,7 +58,7 @@ Pronto! A API deve estar rodando em `http://localhost:8080` (ou na porta que voc
 
 ---
 
-## 🛠️ Endpoints da API
+##  Endpoints da API
 
 Aqui estão os principais endpoints disponíveis e como usá-los.
 
@@ -80,7 +80,7 @@ Aqui estão os principais endpoints disponíveis e como usá-los.
 
 ---
 
-## 💻 Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 * **Linguagem:** [Go](https://go.dev/)
 * **Banco de Dados:** [PostgreSQL](https://www.postgresql.org/) (via Docker)
