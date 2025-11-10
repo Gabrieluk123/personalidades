@@ -1,5 +1,3 @@
-# api-rest
-
 # Projeto de API REST em Go (API de Exemplo)
 
 > API RESTful de exemplo construída com Go para [Descreva o objetivo principal aqui, ex: "gerenciar um CRUD de usuários", "demonstrar o uso de X", etc.].
